@@ -110,7 +110,7 @@ body > div{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(2vw);
+        transform: translateX(1vw);
     }
 }
 @keyframes move-left {
@@ -118,7 +118,7 @@ body > div{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-2vw);
+        transform: translateX(-1vw);
     }
 }
 #reset-button.invis, #first-half.invis, #second-half.invis, #primary-banana.invis{

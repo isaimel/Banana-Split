@@ -16,7 +16,7 @@ body{
     align-items: center;
     width: min(100rem, 100vw);
     margin: 0;
-    padding: 2rem 20vw;
+    padding: 1rem 12vw;
     box-sizing: border-box;
     text-align: center;
     background-color: rgb(250, 250, 250);
@@ -25,6 +25,7 @@ body{
     font-weight: 100;
     border-radius: 2rem;
     color: rgb(76, 63, 43);
+    font-size: clamp(1rem, 1.6vw, 3rem);
 }
 body > div{
     width: 100%;
@@ -42,7 +43,7 @@ body > div{
 }
 #game-title{
     font-family: "Danfo";
-    font-size: 5.6vw;
+    font-size: clamp(2rem, 4vw, 6rem);
     color: rgb(210, 171, 16)
 }
 #game-description{
@@ -103,7 +104,8 @@ body > div{
 }
 #pun-container{
     font-weight: 100;
-    font-size: .8rem;
+    font-size: calc(.8 * clamp(1rem, 1.6vw, 3rem));
+
 }
 @keyframes move-right {
     0% {

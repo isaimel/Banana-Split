@@ -3,5 +3,15 @@
    "link": "./assets/bananas/realistic-ripe.png",
     "title":"Barely-Ripe Banana",
     "desc": "You can wait like...at least a week to eat this one."
+   },
+   {
+   "link": "./assets/bananas/block-text.png",
+    "title":"Blocky Banana",
+    "desc": "CRUNCH CRUNCH CRUNCH."
+   },
+   {
+   "link": "./assets/bananas/ascii.png",
+    "title":"ASCII Banana",
+    "desc": "You want a text based banana? Copy that!"
    } 
 ]

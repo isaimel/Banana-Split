@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let bananaData = bananasData[ind];
 
         bananaName.textContent = bananaData["title"] + ":";
+        createImage(bananaData["link"], "", "")
 
         for (const img of bananaImg) {
             img.src = bananaData["link"];

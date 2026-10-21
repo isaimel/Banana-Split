@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let bananaDescription = document.getElementById("banana-description");
     let punContainer = document.getElementById("pun-container");
     let bananaScore = document.getElementById("banana-score");
-    let resetButton = document.getElementById("reset-button");
+    // let resetButton = document.getElementById("reset-button");
     let primaryBanana = document.getElementById("primary-banana");
     let firstHalf = document.getElementById("first-half");
     let secondHalf = document.getElementById("second-half");
@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     primaryBanana.addEventListener("click", () => {
         game = false;
     });
-    resetButton.addEventListener("click", startGame);
+    firstHalf.addEventListener("click", startGame);
+    secondHalf.addEventListener("click", startGame);
 
     startGame();
 
@@ -99,14 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function gameStateStyle(gameRestart){
         if (gameRestart){
             primaryBanana.classList.remove("invis");
-            resetButton.classList.add("invis");
+            // resetButton.classList.add("invis");
             firstHalf.classList.add("invis");
             secondHalf.classList.add("invis");  
             bananaScore.textContent = "00.00%";      
         }
         else{
             primaryBanana.classList.add("invis");
-            resetButton.classList.remove("invis");
+            // resetButton.classList.remove("invis");
             firstHalf.classList.remove("invis");
             secondHalf.classList.remove("invis");            
         }

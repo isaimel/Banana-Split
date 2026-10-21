@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let game;
     let start;
     let leftDistance;
+    let bananasData;
+    let punsData;
+    let slottedIndex = null;
 
     primaryBanana.addEventListener("click", () => {
         game = false;
@@ -29,16 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
     firstHalf.addEventListener("click", startGame);
     secondHalf.addEventListener("click", startGame);
 
-    startGame();
+    readData().then(() => {
+        startGame();
+    });
+
+    async function readData(){
+        bananasData = await getJSONData("./assets/data-files/bananas.json");
+        punsData = await getJSONData("./assets/data-files/puns.json");
+    }
 
     async function addBananaInfo() {
-
-        let bananasData = await getJSONData("./assets/data-files/bananas.json");
-        let ind = Math.floor(Math.random() * bananasData.length);
-        let bananaData = bananasData[ind];
+        if (slottedIndex == null) slottedIndex = Math.floor(Math.random() * bananasData.length);
+        let bananaData = bananasData[slottedIndex];
+        slottedIndex = Math.floor(Math.random() * bananasData.length);
 
         bananaName.textContent = bananaData["title"] + ":";
-        createImage(bananaData["link"], "", "")
+        createImage(bananasData[slottedIndex]["link"]);
 
         for (const img of bananaImg) {
             img.src = bananaData["link"];
@@ -49,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function addPun() {
-        let punsData = await getJSONData("./assets/data-files/puns.json");
         let randomIndex = Math.floor(Math.random() * punsData.length);
         let pun = punsData[randomIndex];
         punContainer.textContent = "\"" + pun + "\"";

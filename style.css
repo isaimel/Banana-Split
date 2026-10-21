@@ -115,7 +115,7 @@ body>div {
     grid-row: 2/3;
     z-index: 1;
     /* animation: move-left 0.2s ease-out; */
-    /* transform: translateX(.2rem); */
+    transform: translateX(.3rem);
 }
 
 #second-half {
@@ -123,7 +123,7 @@ body>div {
     grid-row: 2/3;
     z-index: 2;
     /* animation: move-right 0.2s ease-out; */
-    transform: translateX(.2rem);
+    transform: translateX(.6rem);
 }
 
 /* Banana Information */

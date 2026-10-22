@@ -1,41 +1,41 @@
 [
    {
-      "link": "./assets/bananas/realistic-ripe.png",
+      "link": "/realistic-ripe.png",
       "title": "Almost Perfect Banana",
       "desc": "You ever heard of the Stanford marshmallow experiment?"
    },
    {
-      "link": "./assets/bananas/block-text.png",
+      "link": "/block-text.png",
       "title": "Blocky Banana",
       "desc": "CRUNCH CRUNCH CRUNCH."
    },
    {
-      "link": "./assets/bananas/ascii.png",
+      "link": "/ascii.png",
       "title": "ASCII Banana",
       "desc": "You want a text based banana? Copy that!"
    },
    {
-      "link": "./assets/bananas/transparent.png",
+      "link": "/transparent.png",
       "title": "Non-Existent Banana",
       "desc": "I'm taking a quick break. Can you keep an eye out on my lunch?"
    },
    {
-      "link": "./assets/bananas/short.png",
+      "link": "/short.png",
       "title": "Unapologetically Short Banana",
       "desc": "The joke is too obvious, and I refuse to entertain it."
    },
    {
-      "link": "./assets/bananas/sun-pre-ripe.png",
+      "link": "/sun-pre-ripe.png",
       "title": "Barely-Ripe Banana",
       "desc": "You can wait like...at least a week to eat this one."
    },
    {
-      "link": "./assets/bananas/sun-ripe.png",
+      "link": "/sun-ripe.png",
       "title": "The Perfect Banana",
       "desc": "No biases here!"
    },
    {
-      "link": "./assets/bananas/sun-too-ripe.png",
+      "link": "/sun-too-ripe.png",
       "title": "Mushy Banana",
       "desc": "Perfect for banana bread!"
    }

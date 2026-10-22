@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let bananasData;
     let punsData;
     let slottedIndex = null;
+    let publicURL = "https://pub-d7d467f2fbd74f29bcd6f7f704f242c1.r2.dev"
 
     primaryBanana.addEventListener("click", () => {
         game = false;
@@ -58,20 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
     async function addBananaInfo() {
         if (slottedIndex == null) slottedIndex = Math.floor(Math.random() * bananasData.length);
         let bananaData = bananasData[slottedIndex];
-
         slottedIndex = Math.floor(Math.random() * bananasData.length);
 
-        // let ind = Math.floor(Math.random() * bananasData.length);
-        // while (ind == slottedIndex) {
-        //     ind = Math.floor(Math.random() * bananasData.length);
-        // }
-        // slottedIndex = ind;
-        
         bananaName.textContent = bananaData["title"] + ":";
-        createImage(bananaData["link"]);
+        createImage(publicURL + bananasData[slottedIndex]["link"]);
 
+        let imgURL= publicURL + bananaData["link"];
         for (const img of bananaImg) {
-            img.src = bananaData["link"];
+            img.src = imgURL;
             img.alt = bananaData["desc"];
         }
 

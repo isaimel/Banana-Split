@@ -1,8 +1,8 @@
 [
    {
       "link": "./assets/bananas/realistic-ripe.png",
-      "title": "Barely-Ripe Banana",
-      "desc": "You can wait like...at least a week to eat this one."
+      "title": "Almost Perfect Banana",
+      "desc": "You ever heard of the Stanford marshmallow experiment?"
    },
    {
       "link": "./assets/bananas/block-text.png",
@@ -22,6 +22,26 @@
    {
       "link": "./assets/bananas/short.png",
       "title": "Unapologetically Short Banana",
-      "desc": "The joke is too obvious, and I refuse to entertain it"
+      "desc": "The joke is too obvious, and I refuse to entertain it."
+   },
+   {
+      "link": "./assets/bananas/sun-pre-ripe.png",
+      "title": "Barely-Ripe Banana",
+      "desc": "You can wait like...at least a week to eat this one."
+   },
+   {
+      "link": "./assets/bananas/sun-ripe.png",
+      "title": "The Perfect Banana",
+      "desc": "No biases here!"
+   },
+   {
+      "link": "./assets/bananas/sun-more-ripe.png",
+      "title": "Time Sensitive Banana",
+      "desc": "Eat it now, now, now!"
+   },
+   {
+      "link": "./assets/bananas/sun-too-ripe.png",
+      "title": "Mushy Banana",
+      "desc": "Perfect for banana bread!"
    }
 ]

@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener('keydown', (event) => {
         if (event.key === ' ' || event.key === 'Spacebar') {
             event.preventDefault();
-            if (game == true){
+            if (game ==  true){
                 game = false;
             }
             else{
@@ -58,10 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
     async function addBananaInfo() {
         if (slottedIndex == null) slottedIndex = Math.floor(Math.random() * bananasData.length);
         let bananaData = bananasData[slottedIndex];
-        slottedIndex = Math.floor(Math.random() * bananasData.length);
 
+        let ind = Math.floor(Math.random() * bananasData.length);
+        while (ind == slottedIndex) {
+            ind = Math.floor(Math.random() * bananasData.length);
+        }
+        slottedIndex = ind;
+        
         bananaName.textContent = bananaData["title"] + ":";
-        createImage(bananasData[slottedIndex]["link"]);
+        createImage(bananaData["link"]);
 
         for (const img of bananaImg) {
             img.src = bananaData["link"];

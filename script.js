@@ -29,6 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
     primaryBanana.addEventListener("click", () => {
         game = false;
     });
+    primaryBanana.addEventListener("click", () => {
+        game = false;
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === ' ' || event.key === 'Spacebar') {
+            event.preventDefault();
+            if (game == true){
+                game = false;
+            }
+            else{
+                startGame();
+            }
+        }
+    });
     firstHalf.addEventListener("click", startGame);
     secondHalf.addEventListener("click", startGame);
 

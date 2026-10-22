@@ -18,5 +18,10 @@
       "link": "./assets/bananas/transparent.png",
       "title": "Non-Existent Banana",
       "desc": "I'm taking a quick break. Can you keep an eye out on my lunch?"
+   },
+   {
+      "link": "./assets/bananas/short.png",
+      "title": "Unapologetically Short Banana",
+      "desc": "The joke is too obvious, and I refuse to entertain it"
    }
 ]

@@ -59,11 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (slottedIndex == null) slottedIndex = Math.floor(Math.random() * bananasData.length);
         let bananaData = bananasData[slottedIndex];
 
-        let ind = Math.floor(Math.random() * bananasData.length);
-        while (ind == slottedIndex) {
-            ind = Math.floor(Math.random() * bananasData.length);
-        }
-        slottedIndex = ind;
+        slottedIndex = Math.floor(Math.random() * bananasData.length);
+
+        // let ind = Math.floor(Math.random() * bananasData.length);
+        // while (ind == slottedIndex) {
+        //     ind = Math.floor(Math.random() * bananasData.length);
+        // }
+        // slottedIndex = ind;
         
         bananaName.textContent = bananaData["title"] + ":";
         createImage(bananaData["link"]);

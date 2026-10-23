@@ -38,5 +38,10 @@
       "link": "/sun-too-ripe.png",
       "title": "Mushy Banana",
       "desc": "Perfect for banana bread!"
+   },
+   {
+      "link": "/quantum.png",
+      "title": "Banana(?)",
+      "desc": "Sometimes it isn't, sometimes it isn't not."
    }
 ]

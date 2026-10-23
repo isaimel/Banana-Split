@@ -43,5 +43,10 @@
       "link": "/quantum.png",
       "title": "Banana(?)",
       "desc": "Sometimes it isn't, sometimes it isn't not."
+   },
+   {
+      "link": "/pixel.png",
+      "title": "Pixel Banana",
+      "desc": "Make sure to hide this one from the 8-bit, barrel-throwing apes!"
    }
 ]

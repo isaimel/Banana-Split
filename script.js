@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let bananasData;
     let punsData;
     let slottedIndex = null;
+    let difficultyRange = [1, 3];
+    let currentDIfficulty = 1;
     let publicURL = "https://pub-d7d467f2fbd74f29bcd6f7f704f242c1.r2.dev"
 
     primaryBanana.addEventListener("click", () => {
@@ -115,12 +117,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         game = true;
         leftDistance = 0;
+        currentDIfficulty = Math.floor(Math.random() * (difficultyRange[1] - difficultyRange[0] + 1)) + difficultyRange[0];
         addBananaInfo();
         addPun();
         moveGameComponent();
     }
     function getWaveValue(x) {
-        return -50 * Math.cos(x * (Math.PI / 100)) + 50;
+        return -50 * Math.cos(x * currentDIfficulty * (Math.PI / 100)) + 50;
     }
     function gameStateStyle(gameRestart){
         if (gameRestart){

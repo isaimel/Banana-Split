@@ -7,7 +7,8 @@
     <title>Banana Split</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Luckiest+Guy&family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Luckiest+Guy&family=Ribeye+Marrow&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <script type="module" src="script.js"></script>
@@ -15,28 +16,40 @@
 </head>
 
 <body>
-    <div id="game-header">
-        <b><div id="game-title">BANANA SPLIT</div></b>
-        <div id="game-description">Click the banana (or press the SPACEBAR) and try to create the perfect split.</div>
-    </div>
-    <div id="game-container">
-        <div id="banana-img-container">
-            <div id="game-component">
-                <div id="game-piece"><b>↓</b></div>
+    <section id="primary-game">
+        <div id="game-header">
+            <b>
+                <div id="game-title">BANANA SPLIT</div>
+            </b>
+            <div id="game-description">Click within the white area (or press the SPACEBAR) and try to create the perfect split.
             </div>
-            <img id="primary-banana" class="banana-img">
-            <img id="first-half" class="banana-img">
-            <img id="second-half" class="banana-img">
+        </div>
+        <i>
+            <div id="banana-score">00.00%</div>
+        </i>
+        <div id="game-container">
+            <div id="banana-img-container">
+                <div id="game-component">
+                    <div id="game-piece"><b>↓</b></div>
+                </div>
+                <img id="primary-banana" class="banana-img">
+                <img id="first-half" class="banana-img">
+                <img id="second-half" class="banana-img">
+
+            </div>
 
         </div>
-        <i><div id="banana-score">0.0%</div></i>
-    </div>
-    <div id="banana-identifiers">
-        <div id="banana-name"></div>
-        <!-- <hr> -->
-        <div id="banana-description"></div>
-    </div>
-    <i><div id="pun-container"></div></i>
+        <div id="banana-identifiers">
+            <div id="banana-name"></div>
+            <hr>
+            <div id="banana-description"></div>
+        </div>
+        <i>
+            <div id="pun-container"></div>
+        </i>
+    </section>
+    <section id="difficulty-buttons">
+    </section>
 
 </body>
 

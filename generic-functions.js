@@ -50,3 +50,6 @@ export function genLink(href, target = "_blank", rel = "noopener noreferrer") {
     aLink.href = href;
     return aLink;
 }
+export function randomInRange(lowerLimit, upperLimit) {
+    return Math.floor(Math.random() * (upperLimit - lowerLimit + 1)) + lowerLimit;    
+}

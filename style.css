@@ -84,6 +84,7 @@ body {
     background-color: var(--color-4);
     color: var(--color-2);
     border-radius: 2rem;
+    cursor: pointer;
 }
 
 body>div {
@@ -139,7 +140,6 @@ body>div {
 #primary-banana, #first-half, #second-half {
     max-width: 100%;
     max-height: 100%;
-    cursor: pointer;
 }
 
 #primary-banana {

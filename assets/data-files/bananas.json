@@ -68,5 +68,40 @@
       "link": "/bunana.png",
       "title": "Bunana",
       "desc": "A bun pun... in MY GAME???"
+   },
+   {
+      "link": "/bronana.png",
+      "title": "Bronana",
+      "desc": "With a strong dose of Bro-tassium."
+   },
+   {
+      "link": "/chicago-hate.png",
+      "title": "Personal Vandetta Banana",
+      "desc": "IYKYK."
+   },
+   {
+      "link": "/long-way.png",
+      "title": "Long Way Banana",
+      "desc": "Banana the long way."
+   },
+   {
+      "link": "/monkey.png",
+      "title": "Monkey",
+      "desc": "Oh god."
+   },
+   {
+      "link": "/naked.png",
+      "title": "Naked Banana",
+      "desc": "It's their birthday."
+   },
+   {
+      "link": "/wall.png",
+      "title": "Wall Banana",
+      "desc": "Insert social commentary here."
+   },
+   {
+      "link": "/chocobanana.png",
+      "title": "Chocobanana",
+      "desc": "Better than its caramel apple cousin."
    }
 ]

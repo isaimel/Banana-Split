@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         button.classList.add("selected");
         prevButton = button;
-        currentDifficulty = button.value + randomInRange(0 , 10)/10;
+        currentDifficulty = button.value + randomInRange(0 , 4)/10;
         start = 0;
     }
 

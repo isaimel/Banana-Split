@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let bananaImg = document.getElementsByClassName("banana-img");
     let bananaName = document.getElementById("banana-name");
     let bananaDescription = document.getElementById("banana-description");
+    let activeDescription = document.getElementById("active-description");
+    let completeDescription = document.getElementById("complete-description");
+
     let punContainer = document.getElementById("pun-container");
     let bananaScore = document.getElementById("banana-score");
     let primaryBanana = document.getElementById("primary-banana");
@@ -185,11 +188,16 @@ document.addEventListener("DOMContentLoaded", () => {
             firstHalf.classList.add("invis");
             secondHalf.classList.add("invis");
             bananaScore.textContent = "00.00%";
+            completeDescription.classList.add("invis");
+            activeDescription.classList.remove("invis");
+
         }
         else {
             primaryBanana.classList.add("invis");
             firstHalf.classList.remove("invis");
             secondHalf.classList.remove("invis");
+            activeDescription.classList.add("invis");
+            completeDescription.classList.remove("invis");
         }
 
     }

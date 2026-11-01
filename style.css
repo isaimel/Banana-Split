@@ -61,12 +61,12 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    gap: 1rem;
+    gap: .5rem;
     background-color: var(--color-1);
     margin: 0;
     height: 100vh;
     width: 100vw;
-    
+    color: var(--color-2);    
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -84,7 +84,6 @@ body {
     box-sizing: border-box;
     text-align: center;
     background-color: var(--color-4);
-    color: var(--color-2);
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -198,10 +197,16 @@ body>div {
     }
 }
 
-#game-container .invis {
+
+#active-description, #complete-description{
+    display: block;
+}
+#active-description.invis, #complete-description.invis{
     display: none;
 }
-
+#game-container .invis{
+    display: none;
+}
 .diff-button {
     background-color: var(--color-4);
     padding: .5rem;
@@ -214,14 +219,20 @@ body>div {
 #difficulty-buttons .mid, #difficulty-buttons .small {
     display: none;
 }
-
+#difficulty-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-2);
+    gap: .2rem;
+}
 #difficulty-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2vw;
     font-family: var(--font-2);
-
 }
 
 .diff-button.selected{
@@ -238,7 +249,7 @@ body>div {
     }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     #difficulty-buttons .mid {
         display: none;
     }
@@ -246,4 +257,4 @@ body>div {
     #difficulty-buttons .small {
         display: inline;
     }
-}
+} */
